@@ -5,25 +5,34 @@
 Пациенту требуется врачебный осмотр, если ему более 40 и вес менее 50 или больше 120 кг.
 Все остальные варианты вы можете обработать на ваш вкус и полет фантазии.'''
 
-
-#Запрашиваем данные у клиента для анкеты
-client_first_name = input('Введите Ваше имя: ')
-client_second_name = input('Введите Вашу фимилию: ')
-client_age = int(input('Введите Ваш возраст: '))
-client_weight = int(input('Введите Ваш вес: '))
-
-print('_'*40 + '\nЗаключение на основании Ваших данных:\n')
+repeat_program = False
 
 #Прописываем условие: Пациент в хорошем состоянии, если ему до 30 лет и вес от 50 и до 120 кг
-if client_age < 30 and (client_weight > 50 or client_weight < 120):
-    print('--> Пациент в хорошем состоянии')
+while repeat_program == False:
+    # Запрашиваем данные у клиента для анкеты
+    client_first_name = input('Введите Ваше имя: ')
+    client_second_name = input('Введите Вашу фимилию: ')
+    client_age = int(input('Введите Ваш возраст: '))
+    client_weight = int(input('Введите Ваш вес: '))
+
+    print('_' * 40 + '\nЗаключение на основании Ваших данных:\n')
+    if client_age < 30:
+        if client_weight > 50 or client_weight < 120:
+            print('--> Пациент в хорошем состоянии')
+        else:
+            repeat_program = False
 
 #Прописываем условие: Пациенту требуется заняться собой, если ему более 30 и вес меньше 50 или больше 120 кг
-if client_age > 30 and (client_weight < 50 or client_weight > 120):
-    print('--> Пациенту требуется заняться собой')
+    if client_age > 30 and client_age < 40:
+        if client_weight < 50 or client_weight > 120:
+            print('--> Пациенту требуется заняться собой')
+        else:
+            repeat_program = False
 
 #Прописываем условие: Пациенту требуется врачебный осмотр, если ему более 40 и вес менее 50 или больше 120 кг
-if client_age > 40 and (client_weight < 50 or client_weight > 120):
-    print('--> Пациенту требуется врачебный осмотр')
-
+    if client_age > 40:
+        if client_weight < 50 or client_weight > 120:
+            print('--> Пациенту требуется врачебный осмотр')
+        else:
+            repeat_program = False
 
