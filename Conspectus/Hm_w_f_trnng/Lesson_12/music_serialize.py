@@ -25,10 +25,10 @@ with open('group.dat', 'wb') as f:
 
 print('Объект записан в group.dat')
 
-with open('group.json', 'w') as f:
+with open('group.json', 'w', encoding = 'utf-8') as f:
     json_my_favourite_group = json.dump(my_favourite_group, f)
 
-
+print('Объект записан в group.json')
 
 
 
