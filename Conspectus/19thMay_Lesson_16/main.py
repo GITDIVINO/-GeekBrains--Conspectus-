@@ -1,8 +1,4 @@
-'''1. В консольный файловый менеджер добавить проверку ввода пользователя для всех функции с параметрами
-(на уроке разбирали на примере одной функции).'''
-
 import sys
-sys.path.append('/mnt/c/Users/User/Desktop/GeekBrains/Conspectus/19thMay_Lesson_16')
 from core import create_file, create_folder, get_list, delete_file, copy_file, save_info
 
 save_info('start')
@@ -35,10 +31,6 @@ elif command == 'help':
     print('И так далее......')
 
 save_info('finish')
-
-
-
-
 
 
 
