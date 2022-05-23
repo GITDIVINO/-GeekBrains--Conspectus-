@@ -2,7 +2,7 @@
 
 # что бы импортировать функции из модуля core мы должны задать путь через sys
 import sys
-sys.path.append('/mnt/c/Users/User/Desktop/GeekBrains/Conspectus/19thMay_Lesson_16')
+sys.path.append('/mnt/c/Users/User/Desktop/GeekBrains/Conspectus/TrainingCourse/19thMay_Lesson_16')
 from core import create_file, create_folder, get_list, delete_file, copy_file, save_info, cwd
 
 save_info('start')

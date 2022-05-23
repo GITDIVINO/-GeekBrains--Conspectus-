@@ -4,7 +4,3 @@
 first_figure = int(input('Введите число: '))
 second_figure = 2
 print(f'Сумма чисел {first_figure} и {second_figure} равна {first_figure + second_figure}')
-
-
-
-
