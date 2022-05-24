@@ -51,4 +51,15 @@ def choise():
 
 print(f'Your choise \'{choise()}\'')
 
+#_______________________________________________________________________
+'''Сколько раз встречается буква в строке'''
+
+def get_letter(string, letter):
+    return len([i for i in string if i in letter])
+
+print(get_letter('lskfndfkn', 'n'))
+
+
+
+
 
